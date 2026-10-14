@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const dbPath = join(__dirname, import.meta.env.SQLITE_DB_PATH);
-const db = new Database(dbPath);
+const db = new Database("./data/clients.db");
 
 export function getClients() {
   return db.prepare(`
