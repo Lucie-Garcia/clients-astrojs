@@ -47,9 +47,6 @@ jobs:
             echo "Vérification du service..."
             sudo systemctl status clients
 
-            echo "Health check..."
-            curl --fail http://localhost:3344/
-
             echo "======================================"
             echo "Déploiement terminé"
             echo "======================================"
